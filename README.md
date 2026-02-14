@@ -8,7 +8,7 @@ So you can build a live financial model — dynamic formulas, scenario toggles, 
 
 ## The Workflow
 
-Three phases: design the model, specify it precisely, build it programmatically. The tools matter less than the separation between phases.
+Three phases: design the model, specify it precisely, build it programmatically.
 
 ### 1. Model Design
 
@@ -19,7 +19,7 @@ Before writing any formulas, develop and stress-test the model's logic:
 - Define model architecture: sheet structure, driver logic, linkages between sections
 - Establish scenario definitions and sensitivity ranges
 
-This is the intellectual work. You're deciding that revenue should be `volume × ASP × utilization` with a ramp curve — not writing Excel syntax.
+This is the intellectual work. You're deciding that revenue should be `volume × ASP × utilization` with assumptions on various product lines with a ramp curve — not writing Excel syntax.
 
 Both the Claude app and Claude Code work for this phase. The Claude app's project feature is useful for accumulating context across sessions and uploading source documents. Claude Code's plan mode works if you prefer staying in the terminal. Either way, the goal is the same: arrive at a defensible model design before generating any spreadsheet code.
 
@@ -34,9 +34,9 @@ The bridge between design and execution. This document specifies:
 - **Formatting conventions** — number formats, units, sign conventions
 - **Sources** — provenance for every hardcoded number
 
-Precision here determines output quality. Ambiguity in this document becomes errors in the spreadsheet.
+Precision here determines output quality. Ambiguity in this document can become errors in the spreadsheet - working with an AI here to produce these documents is helpful to keep track of everything.
 
-From the model approach, generate project scaffolding:
+From the model approach, ask your AI assistant to generate project scaffolding:
 
 - **`CLAUDE.md`** — project context file Claude Code reads on startup (model structure, conventions, constraints)
 - **Skill files** — `SKILL.md` and `recalc.py` from Anthropic's [skills repo](https://github.com/anthropics/skills/tree/main/skills/xlsx) (details below)
@@ -62,7 +62,7 @@ Open the output `.xlsx` in Excel or Sheets. Spot-check references, toggle scenar
 
 ## Under the Hood
 
-Claude Code doesn't operate inside Excel. No GUI is involved. It writes Python that *constructs* an Excel file programmatically.
+Claude Code doesn't operate inside Excel - it writes Python that *constructs* an Excel file programmatically. There's no GUI invovled during the build; you'll see it after.
 
 The pipeline:
 
