@@ -1,0 +1,621 @@
+[
+  {
+    "B": "SOURCES & NOTES",
+    "orig_row": 75
+  },
+  {
+    "B": "Ref",
+    "C": "Parameter",
+    "D": "Value",
+    "E": "Sources",
+    "F": "Notes",
+    "orig_row": 76
+  },
+  {
+    "B": "ANCHOR DISTRIBUTION PARTNER CONFIG",
+    "orig_row": 77
+  },
+  {
+    "B": "[6][c]",
+    "C": "Number of Zones",
+    "D": "6 (Atlas)",
+    "E": "Locus Robotics deployment study; Atlas Logistics warehouse automation program",
+    "F": "Atlas: 12 distribution centers, 4,200+ daily SKU throughput. 6 zones = initial robotic footprint across 3 largest DCs.",
+    "orig_row": 78
+  },
+  {
+    "B": "[7][c]",
+    "C": "Planning Start Quarter",
+    "D": "Q2'27",
+    "E": "Arctura deployment timeline",
+    "F": "Assumes contract execution and site survey initiation.",
+    "orig_row": 79
+  },
+  {
+    "B": "[8][c]",
+    "C": "Go-Live Quarter",
+    "D": "Q4'27 (planning+impl=8mo)",
+    "E": "Arctura implementation playbook",
+    "F": "8-month planning+implementation cycle. Derived from anchor_site_cost_summary.xlsx buildout timeline.",
+    "orig_row": 80
+  },
+  {
+    "B": "[9][c]",
+    "C": "Implementation MSRP",
+    "D": "$350K/zone",
+    "E": "Arctura cost model (anchor_site_cost_summary.xlsx)",
+    "F": "Cost basis ~$235K/site over 2 years (~$62K NRC + ~$7.5K/mo MRC). $350K MSRP = ~33% margin over cost.",
+    "orig_row": 81
+  },
+  {
+    "B": "[10][c]",
+    "C": "Annual Licensing Fee",
+    "D": "$85K/zone/yr",
+    "E": "Arctura pricing framework",
+    "F": "$510K/yr for 6-zone partner. Activates post-implementation. Covers platform, NOC, support, software updates.",
+    "orig_row": 82
+  },
+  {
+    "B": "[11][c]",
+    "C": "License Activation Quarter",
+    "D": "Q2'29",
+    "E": "Arctura contract structure",
+    "F": "Begins after implementation complete + stabilization period. ~5-6 quarters post go-live for Partner 1.",
+    "orig_row": 83
+  },
+  {
+    "B": "PER-ZONE ECONOMICS",
+    "orig_row": 85
+  },
+  {
+    "B": "[13][c]",
+    "C": "Per-Zone Implementation MSRP",
+    "D": "$350,000",
+    "E": "Arctura cost model; anchor_site_cost_summary.xlsx",
+    "F": "Includes conveyor integration, robotic arm installation, safety fencing, network build, commissioning. Volume discounts for zones 4-6 in cost model (20-28%) not reflected here \u2014 flat rate for simplicity.",
+    "orig_row": 86
+  },
+  {
+    "B": "[14][c]",
+    "C": "Per-Zone Annual License",
+    "D": "$85,000",
+    "E": "Arctura pricing framework",
+    "F": "Justified against ~$875K/yr effective rate during implementation. Less than half ongoing cost.",
+    "orig_row": 87
+  },
+  {
+    "B": "PAYMENT TERMS",
+    "orig_row": 89
+  },
+  {
+    "B": "[18][c]",
+    "C": "Implementation Payment Terms",
+    "D": "40/35/25",
+    "E": "Arctura contract structure",
+    "F": "% at signing / go-live / month 12. Standard enterprise logistics capital deployment cadence.",
+    "orig_row": 90
+  },
+  {
+    "B": "[19][c]",
+    "C": "% at Signing",
+    "D": "40%",
+    "E": "Arctura contract structure",
+    "F": "Funds initial procurement and infrastructure buildout.",
+    "orig_row": 91
+  },
+  {
+    "B": "[20][c]",
+    "C": "% at Go-Live",
+    "D": "35%",
+    "E": "Arctura contract structure",
+    "F": "Triggered by successful commissioning and acceptance testing.",
+    "orig_row": 92
+  },
+  {
+    "B": "[21][c]",
+    "C": "% at Month 12",
+    "D": "25%",
+    "E": "Arctura contract structure",
+    "F": "Retention/performance holdback. Released after 12-month operational validation.",
+    "orig_row": 93
+  },
+  {
+    "B": "EXPANSION CUSTOMER PRICING",
+    "orig_row": 95
+  },
+  {
+    "B": "[24][c]",
+    "C": "Implementation Fee (per zone)",
+    "D": "$30,000",
+    "E": "Arctura expansion cost model",
+    "F": "~$90K for 3-zone install. Dramatically lower than anchor due to standardized playbook, reduced NRE, and volume procurement.",
+    "orig_row": 96
+  },
+  {
+    "B": "[25][c]",
+    "C": "Program Consulting Fee",
+    "D": "$75,000/partner",
+    "E": "Arctura expansion pricing",
+    "F": "One-time strategic planning, workflow design, change management. Per-partner, not per-zone.",
+    "orig_row": 97
+  },
+  {
+    "B": "[26][c]",
+    "C": "Early Subscription (per zone/year)",
+    "D": "$95,000",
+    "E": "Arctura expansion pricing",
+    "F": "~12% premium over $85K license for no-upfront subscription model. Bundles implementation amortization.",
+    "orig_row": 98
+  },
+  {
+    "B": "[27][c]",
+    "C": "Annual License (post-impl)",
+    "D": "$85,000",
+    "E": "Arctura pricing framework",
+    "F": "Same as anchor. Consistent pricing across customer cohorts for contract simplicity.",
+    "orig_row": 99
+  },
+  {
+    "B": "[28][c]",
+    "C": "Planning + Implementation",
+    "D": "8 months",
+    "E": "Arctura implementation playbook",
+    "F": "Same timeline as anchor. Future cohorts may compress to 6 months with standardized processes.",
+    "orig_row": 100
+  },
+  {
+    "B": "UTILIZATION PRICING",
+    "orig_row": 102
+  },
+  {
+    "B": "[31][c]",
+    "C": "Tier 1 \u2014 $/minute",
+    "D": "$3.50/min",
+    "E": "Arctura pricing framework; operation economics analysis",
+    "F": "Mission-critical: autonomous picking, zone transfer, mixed-case depalletizing. Justified by $2.40/min cost basis + margin. Value-based: $3.50/min on 80-min operation = $280 vs $2K-$5K manual labor equivalent.",
+    "orig_row": 103
+  },
+  {
+    "B": "[32][c]",
+    "C": "Tier 2 \u2014 $/minute",
+    "D": "$0.75/min",
+    "E": "Arctura pricing framework",
+    "F": "Priority but not mission-critical: pallet sorting. High volume compensates lower per-min rate. $0.75/min \u00d7 24 ops/wk \u00d7 15 min = ~$270/wk/zone.",
+    "orig_row": 104
+  },
+  {
+    "B": "[33][c]",
+    "C": "Predictive Maintenance \u2014 $/robot/month",
+    "D": "$40/robot/mo",
+    "E": "Arctura pricing framework; industry IoT monitoring benchmarks",
+    "F": "Industrial IoT maintenance platforms charge $50-$150/asset/mo for predictive analytics. $40/robot/mo = entry-level, leaves margin for warehouse operator. Source: MPI Manufacturing Study 2026.",
+    "orig_row": 105
+  },
+  {
+    "B": "[34][c]",
+    "C": "Vision Inspection \u2014 $/scan",
+    "D": "$12/scan",
+    "E": "Arctura pricing framework",
+    "F": "Per automated quality inspection scan requiring real-time vision processing. Covers defect detection, dimensional verification, label compliance.",
+    "orig_row": 106
+  },
+  {
+    "B": "USE CASE VOLUME ASSUMPTIONS",
+    "orig_row": 108
+  },
+  {
+    "B": "[38][c]",
+    "C": "Autonomous Picking \u2014 Tier",
+    "D": "Tier 1 ($3.50/min)",
+    "E": "Arctura pricing framework",
+    "F": "Mission-critical: fully autonomous item retrieval and placement.",
+    "orig_row": 109
+  },
+  {
+    "B": "[38][d]",
+    "C": "Autonomous Picking \u2014 Activation",
+    "D": "Q+0 (at go-live)",
+    "E": "Arctura deployment sequencing",
+    "F": "Core operation. First to activate at each zone.",
+    "orig_row": 110
+  },
+  {
+    "B": "[38][e]",
+    "C": "Autonomous Picking \u2014 Avg Duration",
+    "D": "25 min",
+    "E": "Warehouse picking cycle benchmarks; MHIA operational standards",
+    "F": "Average cycle time for multi-item pick batch including travel, retrieval, and tote placement.",
+    "orig_row": 111
+  },
+  {
+    "B": "[38][f]",
+    "C": "Autonomous Picking \u2014 Volume",
+    "D": "18 ops/zone/wk",
+    "E": "WERC DC Measures study (2025); Berkshire Grey pilot deployment (50K+ picks/day top sites); Amazon Robotics throughput benchmarks; DHL Innovation Center case study",
+    "F": "Range: 12-35/wk. In-person baseline 40-200 picks/hr by site size. 10-25% autonomous conversion fraction. Conservative for large DCs, moderate for mid-size. Mostly substitution; net-new from extended shift coverage.",
+    "orig_row": 112
+  },
+  {
+    "B": "[39][c]",
+    "C": "Pallet Sorting \u2014 Tier",
+    "D": "Tier 2 ($0.75/min)",
+    "E": "Arctura pricing framework",
+    "F": "Lower complexity than picking. High volume offsets lower rate.",
+    "orig_row": 113
+  },
+  {
+    "B": "[39][d]",
+    "C": "Pallet Sorting \u2014 Activation",
+    "D": "Q+1 after go-live",
+    "E": "Arctura deployment sequencing",
+    "F": "Requires sorting-specific conveyor integration after initial platform go-live.",
+    "orig_row": 114
+  },
+  {
+    "B": "[39][e]",
+    "C": "Pallet Sorting \u2014 Avg Duration",
+    "D": "15 min",
+    "E": "Automated pallet handling operational protocols",
+    "F": "Focused sort cycle shorter than full pick-and-place (~25-35 min).",
+    "orig_row": 115
+  },
+  {
+    "B": "[39][f]",
+    "C": "Pallet Sorting \u2014 Volume",
+    "D": "24 ops/zone/wk",
+    "E": "MHIA sortation throughput study (350+ pallets/sorter/day); 500K sqft DC: 800 pallet moves/day; XPO Logistics automation report (2025); Warehouse scheduling study (30% peak surge)",
+    "F": "Range: 18-55/wk. Conservative estimate. Subset needing robotic handling: mixed-load pallets, fragile goods, non-standard dimensions. Excludes simple conveyor-only moves.",
+    "orig_row": 116
+  },
+  {
+    "B": "[40][c]",
+    "C": "Inventory Scanning \u2014 Tier",
+    "D": "Tier 1 ($3.50/min)",
+    "E": "Arctura pricing framework",
+    "F": "Mission-critical autonomous cycle counting and location verification.",
+    "orig_row": 117
+  },
+  {
+    "B": "[40][e]",
+    "C": "Inventory Scanning \u2014 Avg Duration",
+    "D": "35 min",
+    "E": "Warehouse cycle count benchmarks; Zebra Technologies inventory study",
+    "F": "Full aisle scan including barcode/RFID read, location verification, discrepancy flagging.",
+    "orig_row": 118
+  },
+  {
+    "B": "[40][f]",
+    "C": "Inventory Scanning \u2014 Volume",
+    "D": "8 ops/zone/wk",
+    "E": "APICS cycle count frequency guidelines (daily high-value, weekly standard); GS1 inventory accuracy study (99.5% target); Ryder Supply Chain IoT deployment; Honeywell connected warehouse pilot",
+    "F": "REVISED from 12. Range: 3-14. Report 1: 4-8 steady-state (front-loaded demand during initial inventory baseline). Report 2: \"Reasonable\" at 12 for high-value zones. Base=8: broader than cycle-count-only, includes ad hoc location audits.",
+    "orig_row": 119
+  },
+  {
+    "B": "[41][c]",
+    "C": "Zone Transfer \u2014 Tier",
+    "D": "Tier 1 ($3.50/min)",
+    "E": "Arctura pricing framework",
+    "F": "Highest-complexity autonomous transport operation.",
+    "orig_row": 120
+  },
+  {
+    "B": "[41][e]",
+    "C": "Zone Transfer \u2014 Avg Duration",
+    "D": "90 min",
+    "E": "Cross-zone transport cycle benchmarks",
+    "F": "Includes multi-stop routing, load balancing, and handoff coordination.",
+    "orig_row": 121
+  },
+  {
+    "B": "[41][f]",
+    "C": "Zone Transfer \u2014 Volume",
+    "D": "5 ops/zone/wk",
+    "E": "MHI Annual Report: avg 12 inter-zone moves/day large DCs; OSHA automated vehicle guidelines; Vecna Robotics multi-zone deployment data; Warehouse layout optimization study (2025)",
+    "F": "REVISED from 7. Range: 2-8. 5/wk = moderate inter-zone activity. 7/wk = high-throughput cross-dock. Both reports: \"Aggressive unless dedicated fleet.\" Multi-robot coordination required.",
+    "orig_row": 122
+  },
+  {
+    "B": "[42][c]",
+    "C": "Mixed-Case Depalletizing \u2014 Tier",
+    "D": "Tier 1 ($3.50/min)",
+    "E": "Arctura pricing framework",
+    "F": "Mission-critical heterogeneous load handling.",
+    "orig_row": 123
+  },
+  {
+    "B": "[42][e]",
+    "C": "Mixed-Case Depalletizing \u2014 Avg Duration",
+    "D": "80 min",
+    "E": "Multi-SKU depalletizing cycle benchmarks",
+    "F": "Blended: single-SKU ~40min, mixed-SKU ~60min, fragile/irregular ~120min.",
+    "orig_row": 124
+  },
+  {
+    "B": "[42][f]",
+    "C": "Mixed-Case Depalletizing \u2014 Volume",
+    "D": "6 ops/zone/wk",
+    "E": "Walmart inbound DC automation: 4,500 pallets/day; Kroger mixed-case facility: ~2,800 SKUs/facility; CSCMP depalletizing benchmark study; Covariant AI deployment metrics (2025)",
+    "F": "REVISED from 9. Range: 2-10. 6/wk = ~8% of 75-pallet/day zone robotic share. Report 1: \"Aggressive.\" Report 2: \"Reasonable\" at 20% target. Requires vision+manipulation maturity.",
+    "orig_row": 125
+  },
+  {
+    "B": "[43]",
+    "C": "Predictive Maintenance \u2014 Model",
+    "D": "$/robot/mo, fixed",
+    "E": "Arctura pricing framework",
+    "F": "Capacity metric, not operation count. Activates at go-live.",
+    "orig_row": 126
+  },
+  {
+    "B": "[44]",
+    "C": "Vision Quality Inspection \u2014 Model",
+    "D": "$/scan, fixed",
+    "E": "Arctura pricing framework",
+    "F": "Activates with sorting (Q+1). Covers real-time defect and compliance checks.",
+    "orig_row": 127
+  },
+  {
+    "B": "RAMP & VOLUME DECAY",
+    "orig_row": 129
+  },
+  {
+    "B": "[48][c]",
+    "C": "Hockey Stick \u2014 Q1 Ramp",
+    "D": "12%",
+    "E": "Warehouse automation adoption curves; enterprise robotics ramp benchmarks",
+    "F": "Initial pilot volume. Safety certification, workflow integration, operator training.",
+    "orig_row": 130
+  },
+  {
+    "B": "[55][c]",
+    "C": "Hockey Stick \u2014 Q8 Maturity",
+    "D": "100%",
+    "E": "Warehouse automation adoption curves",
+    "F": "8-quarter (2-year) ramp to maturity. Consistent with industrial robotics deployment literature.",
+    "orig_row": 131
+  },
+  {
+    "B": "[58][c]",
+    "C": "Volume Decay \u2014 Zone 1 (Flagship)",
+    "D": "100%",
+    "E": "Multi-zone model (not hub-and-spoke)",
+    "F": "Flagship zone: highest volume, most mature teams, earliest activation.",
+    "orig_row": 132
+  },
+  {
+    "B": "[59][c]",
+    "C": "Volume Decay \u2014 Zone 2",
+    "D": "95%",
+    "E": "Multi-zone model; operational complexity scaling",
+    "F": "Slight reduction for second zone due to shared maintenance pool, scheduling friction.",
+    "orig_row": 133
+  },
+  {
+    "B": "[60][c]",
+    "C": "Volume Decay \u2014 Zone 3",
+    "D": "88%",
+    "E": "Multi-zone model; diminishing marginal volume",
+    "F": "Third zone: moderate reduction from robot fleet allocation constraints.",
+    "orig_row": 133.5
+  },
+  {
+    "B": "[61][c]",
+    "C": "Volume Decay \u2014 Zone 4",
+    "D": "80%",
+    "E": "Multi-zone model; diminishing marginal volume",
+    "F": "Fourth zone: shared fleet and technician bandwidth.",
+    "orig_row": 133.6
+  },
+  {
+    "B": "[62][c]",
+    "C": "Volume Decay \u2014 Zone 5",
+    "D": "72%",
+    "E": "Multi-zone model; diminishing marginal volume",
+    "F": "Fifth zone: smaller facility or later activation.",
+    "orig_row": 133.7
+  },
+  {
+    "B": "[63][c]",
+    "C": "Volume Decay \u2014 Zone 6",
+    "D": "65%",
+    "E": "Multi-zone model; diminishing marginal volume",
+    "F": "Sixth zone: smallest deployment. Blended avg (6 zones) = 83%.",
+    "orig_row": 134
+  },
+  {
+    "B": "MAINTENANCE & INSPECTION BASELINES",
+    "orig_row": 136
+  },
+  {
+    "B": "[68][c]",
+    "C": "Robots per Zone",
+    "D": "80",
+    "E": "Atlas Logistics fleet sizing study; Locus Robotics fleet density (100-150 bots/zone in large DCs); 6 River Systems warehouse deployment data",
+    "F": "480 total robots \u00f7 6 zones. Atlas 12 DCs with 1,200+ robots total. 80/zone = moderate density for mixed autonomous fleet.",
+    "orig_row": 137
+  },
+  {
+    "B": "[69][c]",
+    "C": "Maintenance Ramp Start",
+    "D": "40% at go-live",
+    "E": "Industrial IoT deployment literature",
+    "F": "Assumes partial fleet coverage at launch, ramping to full over 5 quarters.",
+    "orig_row": 138
+  },
+  {
+    "B": "[70][c]",
+    "C": "Quarters to Full Maintenance",
+    "D": "5 quarters",
+    "E": "Warehouse automation implementation timelines",
+    "F": "Full predictive coverage within 15 months of go-live.",
+    "orig_row": 139
+  },
+  {
+    "B": "[72][c]",
+    "C": "Scans per Zone per Month",
+    "D": "250",
+    "E": "Atlas: ~50K inspections/yr across DCs; Cognex vision system throughput: ~2K scans/line/day; MHIA quality inspection benchmarks; Machine vision ROI study (2025)",
+    "F": "Autonomous share = subset of total QC volume. Defect detection + dimensional verification + label compliance. 250/mo conservative per both reports.",
+    "orig_row": 140
+  },
+  {
+    "B": "TECHNICAL & OPERATIONAL",
+    "orig_row": 142
+  },
+  {
+    "B": "[T1]",
+    "C": "Robot Control Latency \u2014 Ideal",
+    "D": "<50 ms RTT",
+    "E": "Industrial robotics control reviews; 5G industrial IoT study (2025); Edge computing latency benchmarks",
+    "F": "50-100ms acceptable for picking tasks. >150ms impacts precision grasping. >300ms unsafe for high-speed operations.",
+    "orig_row": 143
+  },
+  {
+    "B": "[T2]",
+    "C": "Control Latency \u2014 Demonstrated",
+    "D": "12-35 ms RTT",
+    "E": "AWS Wavelength edge demo (2024): 15ms; Azure Edge Zones: 12ms local; Verizon MEC: 35ms regional",
+    "F": "Arctura edge compute targets sub-20ms for intra-zone control loops.",
+    "orig_row": 144
+  },
+  {
+    "B": "ATLAS LOGISTICS BASELINES",
+    "orig_row": 146
+  },
+  {
+    "B": "[N1]",
+    "C": "Annual Shipments",
+    "D": "18,500,000/yr",
+    "E": "Atlas Logistics public fact sheet",
+    "F": "12 distribution centers + 150+ last-mile facilities.",
+    "orig_row": 147
+  },
+  {
+    "B": "[N2]",
+    "C": "Daily Order Lines",
+    "D": "425,000/day",
+    "E": "Atlas Logistics public fact sheet",
+    "orig_row": 148
+  },
+  {
+    "B": "[N3]",
+    "C": "QC Inspection Volume",
+    "D": ">50,000/yr",
+    "E": "Atlas Logistics quality ops report",
+    "F": "Order-of-magnitude total inspection throughput.",
+    "orig_row": 149
+  },
+  {
+    "B": "[N4]",
+    "C": "Existing Robotic Systems",
+    "D": "45 (end 2026)",
+    "E": "Locus Robotics enterprise deployment study",
+    "F": "Growth from 8 (2022). Autonomous picking = 18% of order volume, targeting 35%.",
+    "orig_row": 150
+  },
+  {
+    "B": "[N5]",
+    "C": "High-Value SKU Picks",
+    "D": ">8,000,000/yr (2026)",
+    "E": "Atlas Logistics operations report",
+    "F": "High-value only; total pick volume significantly higher.",
+    "orig_row": 151
+  },
+  {
+    "B": "[N6]",
+    "C": "Active Robot Fleet",
+    "D": "~480 across 12 DCs",
+    "E": "Atlas Logistics automation paper",
+    "F": "Predictive maintenance covers 200 robots / 5 DCs = 42% penetration.",
+    "orig_row": 152
+  },
+  {
+    "B": "SCENARIO VOLUMES (ops/zone/wk at maturity)",
+    "orig_row": 155
+  },
+  {
+    "B": "Use Case",
+    "C": "Bear",
+    "D": "Base",
+    "E": "Bull",
+    "F": "Evidence Range",
+    "orig_row": 156
+  },
+  {
+    "B": "Autonomous Picking [38][f]",
+    "C": "12",
+    "D": "18",
+    "E": "30",
+    "F": "12-35",
+    "orig_row": 157
+  },
+  {
+    "B": "Pallet Sorting [39][f]",
+    "C": "18",
+    "D": "24",
+    "E": "45",
+    "F": "18-55",
+    "orig_row": 158
+  },
+  {
+    "B": "Inventory Scanning [40][f]",
+    "C": "4",
+    "D": "8",
+    "E": "14",
+    "F": "3-14",
+    "orig_row": 159
+  },
+  {
+    "B": "Zone Transfer [41][f]",
+    "C": "3",
+    "D": "5",
+    "E": "8",
+    "F": "2-8",
+    "orig_row": 160
+  },
+  {
+    "B": "Mixed-Case Depalletizing [42][f]",
+    "C": "3",
+    "D": "6",
+    "E": "10",
+    "F": "2-10",
+    "orig_row": 161
+  },
+  {
+    "B": "REVISION LOG",
+    "orig_row": 164
+  },
+  {
+    "B": "Ref",
+    "C": "Previous",
+    "D": "Revised",
+    "E": "\u0394",
+    "F": "Rationale",
+    "orig_row": 165
+  },
+  {
+    "B": "[40][f]",
+    "C": "12",
+    "D": "8",
+    "E": "-4",
+    "F": "Scanning demand front-loaded; steady-state 4-8 for routine cycle counts.",
+    "orig_row": 166
+  },
+  {
+    "B": "[41][f]",
+    "C": "7",
+    "D": "5",
+    "E": "-2",
+    "F": "Multi-robot coordination constraints. Fleet allocation bottleneck.",
+    "orig_row": 167
+  },
+  {
+    "B": "[42][f]",
+    "C": "9",
+    "D": "6",
+    "E": "-3",
+    "F": "~8% robotic share of total pallet volume. Vision+manipulation maturity assumed.",
+    "orig_row": 168
+  }
+]
