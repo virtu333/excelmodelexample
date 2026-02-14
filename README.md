@@ -2,9 +2,9 @@
 
 ## The Core Insight
 
-An `.xlsx` file is XML in a ZIP archive. It's a structured binary format — no different from code, JSON, or any other machine-readable output. AI coding agents already generate these formats well. Excel is no exception.
+An `.xlsx` file is XML in a ZIP archive — a structured binary format no different from code, JSON, or any other machine-readable output. If an agent can generate a config file or a web page, it can generate a spreadsheet.
 
-This means you can produce fully functional financial models — dynamic formulas, scenario toggles, industry-standard formatting, sourced assumptions — through an agent-driven workflow. The output isn't a static table. It's a live model: change an input, every dependent cell updates.
+The output isn't a static table. It's a live financial model — dynamic formulas, scenario toggles, industry-standard formatting, sourced assumptions. Change an input, every dependent cell updates.
 
 ## The Workflow
 
@@ -62,7 +62,7 @@ Open the output `.xlsx` in Excel or Sheets. Spot-check references, toggle scenar
 
 ## Under the Hood
 
-Claude Code doesn't operate inside Excel. No GUI is involved. It writes Python that *constructs* an Excel file programmatically — the same way you'd generate an HTML page or a config file.
+Claude Code doesn't operate inside Excel. No GUI is involved. It writes Python that *constructs* an Excel file programmatically.
 
 The pipeline:
 
@@ -89,19 +89,19 @@ Drop both into your project directory or reference them in `CLAUDE.md`.
 
 **Design is the hard part, not construction.** Deciding that revenue = `volume × ASP × utilization` with a 24-month ramp is the analytical work. Translating that into `=B15*B16*B17` across 20 columns with proper formatting is rote. This workflow keeps the analyst on the former and the agent on the latter.
 
-**Context compounds.** The planning phase builds up model-specific context — assumptions, sources, strategic rationale — across multiple sessions. That accumulated context flows through the model approach document into the build phase. The spec quality reflects the depth of the upfront work.
+**Context compounds.** The planning phase builds up model-specific context — assumptions, sources, strategic rationale — across multiple sessions. That context flows through the model approach document into the build phase. A thin spec produces a thin model.
 
 ## Beyond Excel: Presentations
 
-The same pattern — structured specification → programmatic construction — works for PowerPoint. A `.pptx` file is also XML in a ZIP archive, and `python-pptx` is the `openpyxl` equivalent.
+Same principle applies to PowerPoint. A `.pptx` is the same kind of artifact, and `python-pptx` is the `openpyxl` equivalent.
 
-The workflow is similar:
+The workflow:
 
-1. **Define the deck spec** — slide count, layout per slide, content outline, visual style. Be specific: "Slide 3: two-column layout, left = bullet summary of TAM sizing, right = bar chart from model output, source citation in footer." The more precise the spec, the better the output.
+1. **Define the deck spec** — slide count, layout per slide, content outline, visual style. Be specific: "Slide 3: two-column layout, left = bullet summary of TAM sizing, right = bar chart from model output, source citation in footer."
 
-2. **Provide a slide template** — drop a branded `.pptx` template into the project directory. Claude Code can use it as the base, applying your existing slide masters, color palettes, and font choices rather than starting from defaults. Reference it in your `CLAUDE.md` alongside the deck spec.
+2. **Provide a slide template** — drop a branded `.pptx` into the project directory. Claude Code applies your existing slide masters, color palettes, and fonts rather than starting from defaults.
 
-3. **Build with `python-pptx`** — Claude Code generates a script that constructs each slide programmatically: titles, text boxes, tables, charts, images, speaker notes. No recalculation step needed (unlike Excel), so the output is immediately usable.
+3. **Build with `python-pptx`** — Claude Code constructs each slide programmatically: titles, text boxes, tables, charts, images, speaker notes. No recalculation step needed, so the output is immediately usable.
 
 A deck spec might look like:
 
@@ -116,7 +116,7 @@ Slide 7: Financial projections — 5-year P&L summary table
 Slide 8: Appendix — detailed assumptions, source citations
 ```
 
-This pairs naturally with the Excel workflow above — build the model first, then generate a presentation that pulls key outputs and visualizations from it.
+Pairs naturally with the Excel workflow — build the model first, then generate a deck that pulls key outputs from it.
 
 ```bash
 pip install python-pptx
@@ -124,7 +124,7 @@ pip install python-pptx
 
 ## Example Model
 
-This repo includes a complete working example: a 5-year quarterly revenue model for a robotics startup (Arctura), with 11 sheets covering anchor partner revenue, expansion pipeline, cost forecasting, P&L, DCF valuation, and sensitivity analysis.
+This repo includes a working example: a 5-year quarterly revenue model for a robotics startup (Arctura) — 11 sheets covering anchor partner revenue, expansion pipeline, cost forecasting, P&L, DCF valuation, and sensitivity analysis.
 
 ### Project Files
 
@@ -163,4 +163,4 @@ python validate_sensitivity.py
 3. Install Python dependencies: `pip install openpyxl pandas`
 4. Review `SKILL.md` for formatting conventions
 5. Study the example: read `CLAUDE.md` to see how a model approach document translates into a build script, then review `build_model.py` to see the patterns
-6. Start your own model: create a new `CLAUDE.md` describing your model's structure, drop in the `skills/` directory, and let Claude Code build it
+6. Start your own: create a `CLAUDE.md` describing your model's structure, drop in `skills/`, and build
