@@ -4,7 +4,7 @@
 
 An `.xlsx` file is XML in a ZIP archive — a structured binary format no different from code, JSON, or any other machine-readable output. If an agent can generate a config file or a web page, it can generate a spreadsheet.
 
-The output isn't a static table. It's a live financial model — dynamic formulas, scenario toggles, industry-standard formatting, sourced assumptions. Change an input, every dependent cell updates.
+So you can build a live financial model — dynamic formulas, scenario toggles, industry-standard formatting, sourced assumptions, etc. with agentic coding.
 
 ## The Workflow
 
